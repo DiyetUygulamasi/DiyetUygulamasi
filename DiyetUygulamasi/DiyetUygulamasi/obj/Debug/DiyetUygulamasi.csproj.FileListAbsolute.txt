@@ -1,0 +1,14 @@
+C:\Users\Eray DUMAN\Desktop\C#\DiyetUygulamasi\DiyetUygulamasi\obj\Debug\DiyetUygulamasi.csprojAssemblyReference.cache
+C:\Users\Eray DUMAN\Desktop\C#\DiyetUygulamasi\DiyetUygulamasi\obj\Debug\DiyetUygulamasi.GirisEkrani.resources
+C:\Users\Eray DUMAN\Desktop\C#\DiyetUygulamasi\DiyetUygulamasi\obj\Debug\DiyetUygulamasi.Properties.Resources.resources
+C:\Users\Eray DUMAN\Desktop\C#\DiyetUygulamasi\DiyetUygulamasi\obj\Debug\DiyetUygulamasi.csproj.GenerateResource.cache
+C:\Users\Eray DUMAN\Desktop\C#\DiyetUygulamasi\DiyetUygulamasi\obj\Debug\DiyetUygulamasi.csproj.CoreCompileInputs.cache
+C:\Users\Eray DUMAN\Desktop\C#\DiyetUygulamasi\DiyetUygulamasi\bin\Debug\DiyetUygulamasi.exe.config
+C:\Users\Eray DUMAN\Desktop\C#\DiyetUygulamasi\DiyetUygulamasi\bin\Debug\DiyetUygulamasi.exe
+C:\Users\Eray DUMAN\Desktop\C#\DiyetUygulamasi\DiyetUygulamasi\bin\Debug\DiyetUygulamasi.pdb
+C:\Users\Eray DUMAN\Desktop\C#\DiyetUygulamasi\DiyetUygulamasi\bin\Debug\MetroFramework.Design.dll
+C:\Users\Eray DUMAN\Desktop\C#\DiyetUygulamasi\DiyetUygulamasi\bin\Debug\MetroFramework.dll
+C:\Users\Eray DUMAN\Desktop\C#\DiyetUygulamasi\DiyetUygulamasi\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Eray DUMAN\Desktop\C#\DiyetUygulamasi\DiyetUygulamasi\obj\Debug\DiyetUygulamasi.csproj.CopyComplete
+C:\Users\Eray DUMAN\Desktop\C#\DiyetUygulamasi\DiyetUygulamasi\obj\Debug\DiyetUygulamasi.exe
+C:\Users\Eray DUMAN\Desktop\C#\DiyetUygulamasi\DiyetUygulamasi\obj\Debug\DiyetUygulamasi.pdb
