@@ -19,6 +19,11 @@ namespace DiyetUygulamasi
             InitializeComponent();
         }
 
+        private void FormAdmin_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
         void Listele()
         {
             SqlCommand commandShow = new SqlCommand

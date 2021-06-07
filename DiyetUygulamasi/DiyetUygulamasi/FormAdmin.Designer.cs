@@ -219,6 +219,7 @@ namespace DiyetUygulamasi
             this.Controls.Add(this.dgvAdmin);
             this.Name = "FormAdmin";
             this.Text = "FormAdmin";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormAdmin_FormClosed);
             this.Load += new System.EventHandler(this.FormAdmin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAdmin)).EndInit();
             this.groupBox1.ResumeLayout(false);

@@ -24,3 +24,25 @@ C:\Users\berkc\Documents\GitHub\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\
 C:\Users\berkc\Documents\GitHub\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\obj\Debug\DiyetUygulamasi.pdb
 C:\Users\berkc\Documents\GitHub\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\obj\Debug\DiyetUygulamasi.FormAdmin.resources
 C:\Users\berkc\Documents\GitHub\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\obj\Debug\DiyetUygulamasi.FormGiris.resources
+C:\Users\Eray DUMAN\Source\Repos\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\bin\Debug\DiyetUygulamasi.exe.config
+C:\Users\Eray DUMAN\Source\Repos\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\bin\Debug\DiyetUygulamasi.exe
+C:\Users\Eray DUMAN\Source\Repos\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\bin\Debug\DiyetUygulamasi.pdb
+C:\Users\Eray DUMAN\Source\Repos\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\obj\Debug\DiyetUygulamasi.csprojAssemblyReference.cache
+C:\Users\Eray DUMAN\Source\Repos\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\obj\Debug\DiyetUygulamasi.FormAdmin.resources
+C:\Users\Eray DUMAN\Source\Repos\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\obj\Debug\DiyetUygulamasi.FormGiris.resources
+C:\Users\Eray DUMAN\Source\Repos\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\obj\Debug\DiyetUygulamasi.Properties.Resources.resources
+C:\Users\Eray DUMAN\Source\Repos\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\obj\Debug\DiyetUygulamasi.csproj.GenerateResource.cache
+C:\Users\Eray DUMAN\Source\Repos\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\obj\Debug\DiyetUygulamasi.csproj.CoreCompileInputs.cache
+C:\Users\Eray DUMAN\Source\Repos\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\obj\Debug\DiyetUygulamasi.exe
+C:\Users\Eray DUMAN\Source\Repos\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\obj\Debug\DiyetUygulamasi.pdb
+C:\Users\Eray DUMAN\Desktop\C#\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\bin\Debug\DiyetUygulamasi.exe.config
+C:\Users\Eray DUMAN\Desktop\C#\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\bin\Debug\DiyetUygulamasi.exe
+C:\Users\Eray DUMAN\Desktop\C#\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\bin\Debug\DiyetUygulamasi.pdb
+C:\Users\Eray DUMAN\Desktop\C#\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\obj\Debug\DiyetUygulamasi.csprojAssemblyReference.cache
+C:\Users\Eray DUMAN\Desktop\C#\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\obj\Debug\DiyetUygulamasi.FormAdmin.resources
+C:\Users\Eray DUMAN\Desktop\C#\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\obj\Debug\DiyetUygulamasi.FormGiris.resources
+C:\Users\Eray DUMAN\Desktop\C#\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\obj\Debug\DiyetUygulamasi.Properties.Resources.resources
+C:\Users\Eray DUMAN\Desktop\C#\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\obj\Debug\DiyetUygulamasi.csproj.GenerateResource.cache
+C:\Users\Eray DUMAN\Desktop\C#\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\obj\Debug\DiyetUygulamasi.csproj.CoreCompileInputs.cache
+C:\Users\Eray DUMAN\Desktop\C#\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\obj\Debug\DiyetUygulamasi.exe
+C:\Users\Eray DUMAN\Desktop\C#\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\obj\Debug\DiyetUygulamasi.pdb

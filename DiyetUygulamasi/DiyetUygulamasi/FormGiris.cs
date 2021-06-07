@@ -17,9 +17,11 @@ namespace DiyetUygulamasi
             InitializeComponent();
         }
 
-        private void GirisEkrani_Load(object sender, EventArgs e)
+        private void btnGiris_Click(object sender, EventArgs e)
         {
-
+            FormAdmin admin = new FormAdmin();
+            this.Hide();
+            admin.Show();
         }
     }
 }
