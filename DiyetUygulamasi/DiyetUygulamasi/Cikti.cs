@@ -15,8 +15,8 @@ namespace DiyetUygulamasi
             get { return HastaBilgi; }
         }
 
-        public abstract void SosuHazirla();
-        public abstract void HamuruHazirla();
+        public abstract void KisiselBilgiCikti();
+        public abstract void DiyetBilgiCikti();
 
     }
 }

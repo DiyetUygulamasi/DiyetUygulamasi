@@ -6,7 +6,21 @@ using System.Threading.Tasks;
 
 namespace DiyetUygulamasi
 {
-    class HTML
+    public class HTML:Cikti
     {
+        public HTML()
+        {
+            hastaBilgi = new HastaBilgi();
+        }
+
+        public override void DiyetBilgiCikti()
+        {
+            hastaBilgi.DiyetTur = "";
+        }
+
+        public override void KisiselBilgiCikti()
+        {
+            hastaBilgi.Ad = "";
+        }
     }
 }
