@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace DiyetUygulamasi
 {
-    public interface IDiyet
+    class JSON
     {
-        void DiyetOlustur(string DiyetIsim);
     }
 }

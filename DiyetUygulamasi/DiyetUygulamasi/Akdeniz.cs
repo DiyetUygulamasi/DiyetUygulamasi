@@ -10,9 +10,9 @@ namespace DiyetUygulamasi
     class Akdeniz:IDiyet
     {
 
-        public void DiyetOlustur(string menu)
+        public void DiyetOlustur(string DiyetIsim)
         {
-            MessageBox.Show(menu);
+            MessageBox.Show(DiyetIsim);
         }
     }
 }

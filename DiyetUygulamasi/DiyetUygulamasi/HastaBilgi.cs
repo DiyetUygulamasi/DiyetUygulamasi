@@ -6,17 +6,10 @@ using System.Threading.Tasks;
 
 namespace DiyetUygulamasi
 {
-    public abstract class Hasta
+    public class HastaBilgi
     {
         public string Ad { get; set; }
         public string Soyad { get; set; }
         public double Tc { get; set; }
-
-        protected IDiyet diyet;
-        public Hasta(IDiyet diyet)
-        {
-            this.diyet = diyet;
-        }
-        abstract public void diyetAta(string diyetIsim);
     }
 }

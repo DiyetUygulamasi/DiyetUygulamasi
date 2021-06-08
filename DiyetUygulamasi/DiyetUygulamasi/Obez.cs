@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace DiyetUygulamasi
 {
-    class Obez
+    class Obez:Hasta
     {
+        public Obez(IDiyet diyet) : base(diyet)
+        {
+        }
+        public override void diyetAta(string diyetIsim)
+        {
+            this.diyet.DiyetOlustur(diyetIsim);
+        }
     }
 }

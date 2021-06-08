@@ -47,6 +47,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Akdeniz.cs" />
+    <Compile Include="Cikti.cs" />
+    <Compile Include="Colyak.cs" />
+    <Compile Include="DenizUrunleri.cs" />
     <Compile Include="DiyetDatabaseDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -65,10 +68,15 @@
       <DependentUpon>FormGiris.cs</DependentUpon>
     </Compile>
     <Compile Include="GlutenFree.cs" />
+    <Compile Include="Hasta.cs" />
+    <Compile Include="HastaBilgi.cs" />
     <Compile Include="IDiyet.cs" />
+    <Compile Include="Obez.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Seker.cs" />
     <Compile Include="SqlCon.cs" />
+    <Compile Include="YesilliklerDunyasi.cs" />
     <EmbeddedResource Include="FormAdmin.resx">
       <DependentUpon>FormAdmin.cs</DependentUpon>
     </EmbeddedResource>
