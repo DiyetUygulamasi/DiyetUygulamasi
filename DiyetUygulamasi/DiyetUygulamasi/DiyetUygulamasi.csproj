@@ -61,6 +61,12 @@
     <Compile Include="FormAdmin.Designer.cs">
       <DependentUpon>FormAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormDiyetisyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDiyetisyen.Designer.cs">
+      <DependentUpon>FormDiyetisyen.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormGiris.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,9 @@
     <Compile Include="YesilliklerDunyasi.cs" />
     <EmbeddedResource Include="FormAdmin.resx">
       <DependentUpon>FormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDiyetisyen.resx">
+      <DependentUpon>FormDiyetisyen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormGiris.resx">
       <DependentUpon>FormGiris.cs</DependentUpon>

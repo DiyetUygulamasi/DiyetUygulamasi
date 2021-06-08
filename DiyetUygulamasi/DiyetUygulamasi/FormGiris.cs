@@ -38,7 +38,9 @@ namespace DiyetUygulamasi
                 }
                 else
                 {
-
+                    FormDiyetisyen frmDiyetisyen = new FormDiyetisyen(txtTC.Text);
+                    this.Hide();
+                    frmDiyetisyen.Show();
                 }
             }
             else

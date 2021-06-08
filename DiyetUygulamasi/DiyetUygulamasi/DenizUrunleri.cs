@@ -7,11 +7,10 @@ using System.Windows.Forms;
 
 namespace DiyetUygulamasi
 {
-    class DenizUrunleri:IDiyet
+    public class DenizUrunleri:IDiyet
     {
-        public void DiyetOlustur(string DiyetIsim)
+        void DiyetAta(double HastaTC, string DiyetAdi, string DiyetListesi)
         {
-            MessageBox.Show(DiyetIsim);
         }
     }
 }

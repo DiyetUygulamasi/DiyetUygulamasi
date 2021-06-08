@@ -11,12 +11,13 @@ namespace DiyetUygulamasi
         public string Ad { get; set; }
         public string Soyad { get; set; }
         public double Tc { get; set; }
+        public string Hastalik { get; set; }
 
         protected IDiyet diyet;
         public Hasta(IDiyet diyet)
         {
             this.diyet = diyet;
         }
-        abstract public void diyetAta(string diyetIsim);
+        public abstract void hastaOlustur(string Ad, string Soyad, double TC, string Hastalik);
     }
 }

@@ -11,9 +11,10 @@ namespace DiyetUygulamasi
         public Obez(IDiyet diyet) : base(diyet)
         {
         }
-        public override void diyetAta(string diyetIsim)
+
+        public override void hastaOlustur(string Ad, string Soyad, double TC, string Hastalik)
         {
-            this.diyet.DiyetOlustur(diyetIsim);
+            
         }
     }
 }
