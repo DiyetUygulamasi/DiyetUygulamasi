@@ -9,9 +9,9 @@ namespace DiyetUygulamasi
 {
     class GlutenFree:IDiyet
     {
-       public void DiyetOlustur(string DiyetIsim)
+        public void DiyetAta(Hasta hasta)
         {
-            MessageBox.Show(DiyetIsim);
+
         }
     }
 }

@@ -8,13 +8,7 @@ namespace DiyetUygulamasi
 {
     public interface IDiyet
     {
-        string DiyetAdi { get; set; }
-        string DiyetListesi { get; set; }
-        void DiyetAta(Hasta hasta)
-        {
-            this.DiyetAdi = DiyetAdi;
-            this.DiyetListesi = DiyetListesi;
-        }
+        void DiyetAta(Hasta hasta);
 
     }
 }

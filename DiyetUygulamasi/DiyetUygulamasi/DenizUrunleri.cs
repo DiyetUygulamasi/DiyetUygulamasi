@@ -9,8 +9,9 @@ namespace DiyetUygulamasi
 {
     public class DenizUrunleri:IDiyet
     {
-        void DiyetAta(double HastaTC, string DiyetAdi, string DiyetListesi)
+        public void DiyetAta(Hasta hasta)
         {
+
         }
     }
 }

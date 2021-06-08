@@ -45,7 +45,7 @@ namespace DiyetUygulamasi
 
             if(cmbHastalik.SelectedIndex==0)//Obez Ekleme
             {
-                Obez hasta = new Obez("<<Belirtilmedi>>");
+                
             }
         }
     }

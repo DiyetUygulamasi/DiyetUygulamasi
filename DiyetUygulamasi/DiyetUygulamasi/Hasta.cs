@@ -18,6 +18,7 @@ namespace DiyetUygulamasi
         {
             this.diyet = diyet;
         }
-        public abstract void hastaOlustur(string Ad, string Soyad, double TC, string Hastalik);
+
+        public abstract void hastaOlustur(double TC, string Ad, string Soyad, int HastalikID, double DiyetisyenTC);
     }
 }
