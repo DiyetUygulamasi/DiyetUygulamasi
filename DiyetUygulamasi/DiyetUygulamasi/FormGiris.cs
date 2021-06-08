@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace DiyetUygulamasi
 {
@@ -16,12 +17,38 @@ namespace DiyetUygulamasi
         {
             InitializeComponent();
         }
+        SqlCon connection = new SqlCon();
+        void Kontrol()
+        {
+            SqlCommand kontrol = new SqlCommand
+            {
+                Connection = connection.SqlConnect(),
+                CommandText ="Select * from tblUser where UserTC="+txtTC.Text+" and UserSifre="+"'"+txtSifre.Text+"'"
+            };
+            
+            SqlDataReader dr = kontrol.ExecuteReader();
+            dr.Read();
+            if(dr.HasRows)
+            {
+                if(Convert.ToInt32(dr["UserTypeID"])==0)//Admin Ekranı Açma
+                {
+                    FormAdmin frmAdmin = new FormAdmin();
+                    this.Hide();
+                    frmAdmin.Show();
+                }
+                else
+                {
 
+                }
+            }
+            else
+            {
+                MessageBox.Show("Sonuç Bulunamadı!");
+            }
+        }
         private void btnGiris_Click(object sender, EventArgs e)
         {
-            FormAdmin admin = new FormAdmin();
-            this.Hide();
-            admin.Show();
+            Kontrol();
         }
     }
 }

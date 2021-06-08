@@ -12,7 +12,7 @@ namespace DiyetUygulamasi
 
         public HastaBilgi HastaBilgi
         {
-            get { return hastabilgi; }
+            get { return HastaBilgi; }
         }
 
         public abstract void SosuHazirla();
