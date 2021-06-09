@@ -14,13 +14,13 @@ namespace DiyetUygulamasi
         }
         SqlCon connnection = new SqlCon();
 
-        public override void hastaOlustur(double TC,string Ad, string Soyad, int HastalikID,double DiyetisyenTC)
+        public override void hastaOlustur(Hasta hasta)
         {
 
             SqlCommand hastaEkle = new SqlCommand
             {
                 Connection = connnection.SqlConnect(),
-                CommandText="Execute HastaEkle"+TC+","+"'"+Ad+"'"+","+"'"+Soyad+"'"+","+HastalikID+","+DiyetisyenTC
+                CommandText="Execute HastaEkle"+hasta.Tc+","+"'"+hasta.Ad+"'"+","+"'"+hasta.Soyad+"'"+","+hasta.Hastalik+","+hasta.DiyetisyenTc
             };
         }
     }
