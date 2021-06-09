@@ -111,6 +111,7 @@ namespace DiyetUygulamasi
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "FormGiris";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Giriş";
             this.ResumeLayout(false);
             this.PerformLayout();

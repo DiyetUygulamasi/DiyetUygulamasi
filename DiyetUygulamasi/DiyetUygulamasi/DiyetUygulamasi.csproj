@@ -50,6 +50,7 @@
     <Compile Include="Cikti.cs" />
     <Compile Include="Colyak.cs" />
     <Compile Include="DenizUrunleri.cs" />
+    <Compile Include="DiyetBelirtilmedi.cs" />
     <Compile Include="DiyetDatabaseDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

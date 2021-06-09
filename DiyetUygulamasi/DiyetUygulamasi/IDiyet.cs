@@ -8,7 +8,10 @@ namespace DiyetUygulamasi
 {
     public interface IDiyet
     {
-        void DiyetAta(Hasta hasta);
+        int DiyetID { get; set; }
+        string DiyetAdi { get; set; }
+        string DiyetListesi { get; set; }
+        void DiyetAta(double HastaTc);
 
     }
 }

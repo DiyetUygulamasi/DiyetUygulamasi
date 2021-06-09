@@ -11,6 +11,7 @@ namespace DiyetUygulamasi
     {
         public Obez(IDiyet diyet) : base(diyet)
         {
+            this.diyet = diyet;
         }
         SqlCon connnection = new SqlCon();
 
@@ -20,8 +21,10 @@ namespace DiyetUygulamasi
             SqlCommand hastaEkle = new SqlCommand
             {
                 Connection = connnection.SqlConnect(),
-                CommandText="Execute HastaEkle"+hasta.Tc+","+"'"+hasta.Ad+"'"+","+"'"+hasta.Soyad+"'"+","+hasta.Hastalik+","+hasta.DiyetisyenTc
+                CommandText="Execute HastaEkle "+hasta.Tc+","+"'"+hasta.Ad+"'"+","+"'"+hasta.Soyad+"'"+","+hasta.HastalikID+","+hasta.DiyetisyenTc
             };
+            hastaEkle.ExecuteNonQuery();
+            connnection.SqlConnect().Close();
         }
     }
 }

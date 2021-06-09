@@ -11,7 +11,7 @@ namespace DiyetUygulamasi
         public string Ad { get; set; }
         public string Soyad { get; set; }
         public double Tc { get; set; }
-        public string Hastalik { get; set; }
+        public int HastalikID { get; set; }
         public double DiyetisyenTc { get; set; }
 
         protected IDiyet diyet;

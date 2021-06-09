@@ -38,7 +38,7 @@ namespace DiyetUygulamasi
                 }
                 else
                 {
-                    FormDiyetisyen frmDiyetisyen = new FormDiyetisyen(txtTC.Text);
+                    FormDiyetisyen frmDiyetisyen = new FormDiyetisyen(Convert.ToDouble(txtTC.Text));
                     this.Hide();
                     frmDiyetisyen.Show();
                 }

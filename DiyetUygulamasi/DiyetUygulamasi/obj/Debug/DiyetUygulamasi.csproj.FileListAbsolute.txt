@@ -15,7 +15,6 @@ C:\Users\Eray DUMAN\Desktop\C#\DiyetUygulamasi\DiyetUygulamasi\obj\Debug\DiyetUy
 C:\Users\berkc\Documents\GitHub\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\bin\Debug\DiyetUygulamasi.exe.config
 C:\Users\berkc\Documents\GitHub\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\bin\Debug\DiyetUygulamasi.exe
 C:\Users\berkc\Documents\GitHub\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\bin\Debug\DiyetUygulamasi.pdb
-C:\Users\berkc\Documents\GitHub\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\obj\Debug\DiyetUygulamasi.csprojAssemblyReference.cache
 C:\Users\berkc\Documents\GitHub\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\obj\Debug\DiyetUygulamasi.Properties.Resources.resources
 C:\Users\berkc\Documents\GitHub\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\obj\Debug\DiyetUygulamasi.csproj.GenerateResource.cache
 C:\Users\berkc\Documents\GitHub\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\obj\Debug\DiyetUygulamasi.csproj.CoreCompileInputs.cache
@@ -46,3 +45,4 @@ C:\Users\Eray DUMAN\Desktop\C#\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\D
 C:\Users\Eray DUMAN\Desktop\C#\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\obj\Debug\DiyetUygulamasi.exe
 C:\Users\Eray DUMAN\Desktop\C#\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\obj\Debug\DiyetUygulamasi.pdb
 C:\Users\berkc\Documents\GitHub\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\obj\Debug\DiyetUygulamasi.FormDiyetisyen.resources
+C:\Users\berkc\Documents\GitHub\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\obj\Debug\DiyetUygulamasi.csproj.AssemblyReference.cache

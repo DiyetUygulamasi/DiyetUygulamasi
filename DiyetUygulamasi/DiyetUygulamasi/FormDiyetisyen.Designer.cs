@@ -30,15 +30,19 @@ namespace DiyetUygulamasi
         private void InitializeComponent()
         {
             this.dgvHastalar = new System.Windows.Forms.DataGridView();
+            this.HastaTC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HastaAd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HastaSoyad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HastalikAd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DiyetAd = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnDiyet = new System.Windows.Forms.Button();
-            this.cmbDiyet = new System.Windows.Forms.ComboBox();
+            this.cmbDiyetDegistir = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnEkle = new System.Windows.Forms.Button();
             this.txtSoyad = new System.Windows.Forms.TextBox();
             this.txtAd = new System.Windows.Forms.TextBox();
-            this.txtTC = new System.Windows.Forms.TextBox();
             this.cmbHastalik = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -49,11 +53,7 @@ namespace DiyetUygulamasi
             this.cmbRapor = new System.Windows.Forms.ComboBox();
             this.btnJSON = new System.Windows.Forms.Button();
             this.btnHTML = new System.Windows.Forms.Button();
-            this.HastaTC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HastaAd = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HastaSoyad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HastalikAd = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DiyetAd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtTC = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHastalar)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -62,8 +62,11 @@ namespace DiyetUygulamasi
             // 
             // dgvHastalar
             // 
+            this.dgvHastalar.AllowUserToAddRows = false;
+            this.dgvHastalar.AllowUserToDeleteRows = false;
+            this.dgvHastalar.AllowUserToResizeColumns = false;
+            this.dgvHastalar.AllowUserToResizeRows = false;
             this.dgvHastalar.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvHastalar.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
             this.dgvHastalar.BackgroundColor = System.Drawing.Color.DarkTurquoise;
             this.dgvHastalar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvHastalar.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -76,16 +79,57 @@ namespace DiyetUygulamasi
             this.dgvHastalar.MultiSelect = false;
             this.dgvHastalar.Name = "dgvHastalar";
             this.dgvHastalar.ReadOnly = true;
+            this.dgvHastalar.RowHeadersVisible = false;
             this.dgvHastalar.RowHeadersWidth = 51;
             this.dgvHastalar.RowTemplate.Height = 24;
             this.dgvHastalar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvHastalar.Size = new System.Drawing.Size(661, 289);
             this.dgvHastalar.TabIndex = 0;
             // 
+            // HastaTC
+            // 
+            this.HastaTC.DataPropertyName = "HastaTC";
+            this.HastaTC.HeaderText = "Hasta TC";
+            this.HastaTC.MinimumWidth = 6;
+            this.HastaTC.Name = "HastaTC";
+            this.HastaTC.ReadOnly = true;
+            // 
+            // HastaAd
+            // 
+            this.HastaAd.DataPropertyName = "HastaAd";
+            this.HastaAd.HeaderText = "Hasta Ad";
+            this.HastaAd.MinimumWidth = 6;
+            this.HastaAd.Name = "HastaAd";
+            this.HastaAd.ReadOnly = true;
+            // 
+            // HastaSoyad
+            // 
+            this.HastaSoyad.DataPropertyName = "HastaSoyad";
+            this.HastaSoyad.HeaderText = "Hasta Soyad";
+            this.HastaSoyad.MinimumWidth = 6;
+            this.HastaSoyad.Name = "HastaSoyad";
+            this.HastaSoyad.ReadOnly = true;
+            // 
+            // HastalikAd
+            // 
+            this.HastalikAd.DataPropertyName = "HastalikAd";
+            this.HastalikAd.HeaderText = "Hastalık";
+            this.HastalikAd.MinimumWidth = 6;
+            this.HastalikAd.Name = "HastalikAd";
+            this.HastalikAd.ReadOnly = true;
+            // 
+            // DiyetAd
+            // 
+            this.DiyetAd.DataPropertyName = "DiyetAd";
+            this.DiyetAd.HeaderText = "Diyet Türü";
+            this.DiyetAd.MinimumWidth = 6;
+            this.DiyetAd.Name = "DiyetAd";
+            this.DiyetAd.ReadOnly = true;
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.btnDiyet);
-            this.groupBox1.Controls.Add(this.cmbDiyet);
+            this.groupBox1.Controls.Add(this.cmbDiyetDegistir);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox1.Location = new System.Drawing.Point(694, 12);
@@ -98,25 +142,26 @@ namespace DiyetUygulamasi
             // btnDiyet
             // 
             this.btnDiyet.BackColor = System.Drawing.Color.LimeGreen;
-            this.btnDiyet.Location = new System.Drawing.Point(108, 76);
+            this.btnDiyet.Location = new System.Drawing.Point(6, 76);
             this.btnDiyet.Name = "btnDiyet";
-            this.btnDiyet.Size = new System.Drawing.Size(121, 32);
+            this.btnDiyet.Size = new System.Drawing.Size(241, 52);
             this.btnDiyet.TabIndex = 3;
-            this.btnDiyet.Text = "Diyet Belirle";
+            this.btnDiyet.Text = "Diyet Uygula";
             this.btnDiyet.UseVisualStyleBackColor = false;
+            this.btnDiyet.Click += new System.EventHandler(this.btnDiyet_Click);
             // 
-            // cmbDiyet
+            // cmbDiyetDegistir
             // 
-            this.cmbDiyet.FormattingEnabled = true;
-            this.cmbDiyet.Location = new System.Drawing.Point(108, 31);
-            this.cmbDiyet.Name = "cmbDiyet";
-            this.cmbDiyet.Size = new System.Drawing.Size(121, 28);
-            this.cmbDiyet.TabIndex = 1;
+            this.cmbDiyetDegistir.FormattingEnabled = true;
+            this.cmbDiyetDegistir.Location = new System.Drawing.Point(126, 31);
+            this.cmbDiyetDegistir.Name = "cmbDiyetDegistir";
+            this.cmbDiyetDegistir.Size = new System.Drawing.Size(121, 28);
+            this.cmbDiyetDegistir.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(10, 34);
+            this.label1.Location = new System.Drawing.Point(6, 34);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(92, 20);
             this.label1.TabIndex = 0;
@@ -124,10 +169,10 @@ namespace DiyetUygulamasi
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.txtTC);
             this.groupBox2.Controls.Add(this.btnEkle);
             this.groupBox2.Controls.Add(this.txtSoyad);
             this.groupBox2.Controls.Add(this.txtAd);
-            this.groupBox2.Controls.Add(this.txtTC);
             this.groupBox2.Controls.Add(this.cmbHastalik);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label4);
@@ -166,13 +211,6 @@ namespace DiyetUygulamasi
             this.txtAd.Name = "txtAd";
             this.txtAd.Size = new System.Drawing.Size(121, 26);
             this.txtAd.TabIndex = 9;
-            // 
-            // txtTC
-            // 
-            this.txtTC.Location = new System.Drawing.Point(168, 39);
-            this.txtTC.Name = "txtTC";
-            this.txtTC.Size = new System.Drawing.Size(121, 26);
-            this.txtTC.TabIndex = 8;
             // 
             // cmbHastalik
             // 
@@ -279,45 +317,15 @@ namespace DiyetUygulamasi
             this.btnHTML.Text = "HTML";
             this.btnHTML.UseVisualStyleBackColor = false;
             // 
-            // HastaTC
+            // txtTC
             // 
-            this.HastaTC.DataPropertyName = "HastaTC";
-            this.HastaTC.HeaderText = "Hasta TC";
-            this.HastaTC.MinimumWidth = 6;
-            this.HastaTC.Name = "HastaTC";
-            this.HastaTC.ReadOnly = true;
-            // 
-            // HastaAd
-            // 
-            this.HastaAd.DataPropertyName = "HastaAd";
-            this.HastaAd.HeaderText = "Hasta Ad";
-            this.HastaAd.MinimumWidth = 6;
-            this.HastaAd.Name = "HastaAd";
-            this.HastaAd.ReadOnly = true;
-            // 
-            // HastaSoyad
-            // 
-            this.HastaSoyad.DataPropertyName = "HastaSoyad";
-            this.HastaSoyad.HeaderText = "Hasta Soyad";
-            this.HastaSoyad.MinimumWidth = 6;
-            this.HastaSoyad.Name = "HastaSoyad";
-            this.HastaSoyad.ReadOnly = true;
-            // 
-            // HastalikAd
-            // 
-            this.HastalikAd.DataPropertyName = "HastalikAd";
-            this.HastalikAd.HeaderText = "Hastalık";
-            this.HastalikAd.MinimumWidth = 6;
-            this.HastalikAd.Name = "HastalikAd";
-            this.HastalikAd.ReadOnly = true;
-            // 
-            // DiyetAd
-            // 
-            this.DiyetAd.DataPropertyName = "DiyetAd";
-            this.DiyetAd.HeaderText = "Diyet Türü";
-            this.DiyetAd.MinimumWidth = 6;
-            this.DiyetAd.Name = "DiyetAd";
-            this.DiyetAd.ReadOnly = true;
+            this.txtTC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtTC.Location = new System.Drawing.Point(168, 35);
+            this.txtTC.Mask = "00000000000";
+            this.txtTC.Name = "txtTC";
+            this.txtTC.Size = new System.Drawing.Size(121, 30);
+            this.txtTC.TabIndex = 11;
+            this.txtTC.ValidatingType = typeof(int);
             // 
             // FormDiyetisyen
             // 
@@ -330,6 +338,7 @@ namespace DiyetUygulamasi
             this.Controls.Add(this.dgvHastalar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FormDiyetisyen";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormDiyetisyen";
             this.Load += new System.EventHandler(this.FormDiyetisyen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvHastalar)).EndInit();
@@ -348,13 +357,12 @@ namespace DiyetUygulamasi
         private System.Windows.Forms.DataGridView dgvHastalar;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnDiyet;
-        private System.Windows.Forms.ComboBox cmbDiyet;
+        private System.Windows.Forms.ComboBox cmbDiyetDegistir;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnEkle;
         private System.Windows.Forms.TextBox txtSoyad;
         private System.Windows.Forms.TextBox txtAd;
-        private System.Windows.Forms.TextBox txtTC;
         private System.Windows.Forms.ComboBox cmbHastalik;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -370,5 +378,6 @@ namespace DiyetUygulamasi
         private System.Windows.Forms.DataGridViewTextBoxColumn HastaSoyad;
         private System.Windows.Forms.DataGridViewTextBoxColumn HastalikAd;
         private System.Windows.Forms.DataGridViewTextBoxColumn DiyetAd;
+        private System.Windows.Forms.MaskedTextBox txtTC;
     }
 }

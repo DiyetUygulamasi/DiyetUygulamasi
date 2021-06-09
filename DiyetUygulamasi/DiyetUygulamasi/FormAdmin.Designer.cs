@@ -132,7 +132,7 @@ namespace DiyetUygulamasi
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(58, 25);
             this.label4.TabIndex = 8;
-            this.label4.Text = "Sifre:";
+            this.label4.Text = "Şifre:";
             // 
             // txtSifre
             // 
@@ -218,6 +218,7 @@ namespace DiyetUygulamasi
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvAdmin);
             this.Name = "FormAdmin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormAdmin";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormAdmin_FormClosed);
             this.Load += new System.EventHandler(this.FormAdmin_Load);
