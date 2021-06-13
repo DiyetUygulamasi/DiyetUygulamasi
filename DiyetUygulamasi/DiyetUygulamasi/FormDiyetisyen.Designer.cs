@@ -40,6 +40,7 @@ namespace DiyetUygulamasi
             this.cmbDiyetDegistir = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtTC = new System.Windows.Forms.MaskedTextBox();
             this.btnEkle = new System.Windows.Forms.Button();
             this.txtSoyad = new System.Windows.Forms.TextBox();
             this.txtAd = new System.Windows.Forms.TextBox();
@@ -53,7 +54,6 @@ namespace DiyetUygulamasi
             this.cmbRapor = new System.Windows.Forms.ComboBox();
             this.btnJSON = new System.Windows.Forms.Button();
             this.btnHTML = new System.Windows.Forms.Button();
-            this.txtTC = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHastalar)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -186,6 +186,16 @@ namespace DiyetUygulamasi
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Hasta Ekle";
             // 
+            // txtTC
+            // 
+            this.txtTC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtTC.Location = new System.Drawing.Point(168, 35);
+            this.txtTC.Mask = "00000000000";
+            this.txtTC.Name = "txtTC";
+            this.txtTC.Size = new System.Drawing.Size(121, 30);
+            this.txtTC.TabIndex = 11;
+            this.txtTC.ValidatingType = typeof(int);
+            // 
             // btnEkle
             // 
             this.btnEkle.BackColor = System.Drawing.Color.LimeGreen;
@@ -288,8 +298,8 @@ namespace DiyetUygulamasi
             // 
             this.cmbRapor.FormattingEnabled = true;
             this.cmbRapor.Items.AddRange(new object[] {
-            "Diyet Bilgileri/Hasta Bilgileri",
-            "Hasta Bilgileri/Diyet Bilgileri"});
+            "Hasta Bilgileri/Diyet Bilgileri",
+            "Diyet Bilgileri/Hasta Bilgileri"});
             this.cmbRapor.Location = new System.Drawing.Point(6, 112);
             this.cmbRapor.Name = "cmbRapor";
             this.cmbRapor.Size = new System.Drawing.Size(241, 28);
@@ -305,6 +315,7 @@ namespace DiyetUygulamasi
             this.btnJSON.TabIndex = 12;
             this.btnJSON.Text = "JSON";
             this.btnJSON.UseVisualStyleBackColor = false;
+            this.btnJSON.Click += new System.EventHandler(this.btnJSON_Click);
             // 
             // btnHTML
             // 
@@ -316,16 +327,7 @@ namespace DiyetUygulamasi
             this.btnHTML.TabIndex = 11;
             this.btnHTML.Text = "HTML";
             this.btnHTML.UseVisualStyleBackColor = false;
-            // 
-            // txtTC
-            // 
-            this.txtTC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtTC.Location = new System.Drawing.Point(168, 35);
-            this.txtTC.Mask = "00000000000";
-            this.txtTC.Name = "txtTC";
-            this.txtTC.Size = new System.Drawing.Size(121, 30);
-            this.txtTC.TabIndex = 11;
-            this.txtTC.ValidatingType = typeof(int);
+            this.btnHTML.Click += new System.EventHandler(this.btnHTML_Click);
             // 
             // FormDiyetisyen
             // 
@@ -340,6 +342,7 @@ namespace DiyetUygulamasi
             this.Name = "FormDiyetisyen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormDiyetisyen";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormDiyetisyen_FormClosed);
             this.Load += new System.EventHandler(this.FormDiyetisyen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvHastalar)).EndInit();
             this.groupBox1.ResumeLayout(false);

@@ -46,3 +46,6 @@ C:\Users\Eray DUMAN\Desktop\C#\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\D
 C:\Users\Eray DUMAN\Desktop\C#\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\obj\Debug\DiyetUygulamasi.pdb
 C:\Users\berkc\Documents\GitHub\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\obj\Debug\DiyetUygulamasi.FormDiyetisyen.resources
 C:\Users\berkc\Documents\GitHub\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\obj\Debug\DiyetUygulamasi.csproj.AssemblyReference.cache
+C:\Users\berkc\Documents\GitHub\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\bin\Debug\Newtonsoft.Json.dll
+C:\Users\berkc\Documents\GitHub\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\bin\Debug\Newtonsoft.Json.xml
+C:\Users\berkc\Documents\GitHub\DiyetUygulamasi\DiyetUygulamasi\DiyetUygulamasi\obj\Debug\DiyetUygulamasi.csproj.CopyComplete

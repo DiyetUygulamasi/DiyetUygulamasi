@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.IO;
 
 namespace DiyetUygulamasi
 {
@@ -128,6 +129,52 @@ namespace DiyetUygulamasi
         private void btnDiyet_Click(object sender, EventArgs e)
         {
             DiyetAta();
+        }
+
+        private void btnHTML_Click(object sender, EventArgs e)
+        {
+            if (cmbRapor.SelectedIndex == 0)
+            {
+                HTML html = new HTML(Convert.ToDouble(dgvHastalar.SelectedCells[0].Value));
+                html.BilgiCikti();
+            }
+            else if(cmbRapor.SelectedIndex == 1)
+            {
+                HTML html = new HTML(Convert.ToDouble(dgvHastalar.SelectedCells[0].Value));
+                html.BilgiCiktiTers();
+            }
+            else
+            {
+                MessageBox.Show("Rapor Düzeni Seçiniz.", "Hata!");
+                return;
+            }
+            MessageBox.Show("HTML raporu başarıyla oluşturuldu!","Başarılı!");
+            System.Diagnostics.Process.Start("rapor.html");
+        }
+
+        private void btnJSON_Click(object sender, EventArgs e)
+        {
+            if (cmbRapor.SelectedIndex == 0)
+            {
+                JSON json = new JSON(Convert.ToDouble(dgvHastalar.SelectedCells[0].Value));
+                json.BilgiCikti();
+            }
+            else if (cmbRapor.SelectedIndex == 1)
+            {
+                JSON json = new JSON(Convert.ToDouble(dgvHastalar.SelectedCells[0].Value));
+                json.BilgiCiktiTers();
+            }
+            else
+            {
+                MessageBox.Show("Rapor Düzeni Seçiniz.", "Hata!");
+                return;
+            }
+            MessageBox.Show("JSON raporu başarıyla oluşturuldu!", "Başarılı!");
+            System.Diagnostics.Process.Start("rapor.json");
+        }
+        private void FormDiyetisyen_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

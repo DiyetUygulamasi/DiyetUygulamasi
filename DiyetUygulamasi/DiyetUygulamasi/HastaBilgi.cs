@@ -17,10 +17,12 @@ namespace DiyetUygulamasi
         public string DiyetisyenAd { get; set; }
         public string DiyetisyenSoyad { get; set; }
         public string DiyetAd { get; set; }
+
         public string[] DiyetListe = new string[3];
 
-        void HastaBilgiAl(double hastaTC)
+        public HastaBilgi HastaBilgiAl(double hastaTC)
         {
+            HastaBilgi hasta = new HastaBilgi();
             SqlCommand komut = new SqlCommand
             {
                 Connection = connection.SqlConnect(),
@@ -29,17 +31,18 @@ namespace DiyetUygulamasi
             SqlDataReader dr = komut.ExecuteReader();
             while (dr.Read())
             {
-                Tc = Convert.ToDouble(dr["HastaTC"].ToString());
-                Ad = dr["HastaAd"].ToString();
-                Soyad = dr["HastaSoyad"].ToString();
-                HastalikAd = dr["HastalikAd"].ToString();
-                DiyetisyenAd = dr["DiyetisyenAd"].ToString();
-                DiyetisyenSoyad = dr["DiyetisyenSoyad"].ToString();
-                DiyetAd = dr["DiyetAd"].ToString();
-                DiyetListe[0] = dr["Sabah"].ToString();
-                DiyetListe[1] = dr["Ogle"].ToString();
-                DiyetListe[2] = dr["Aksam"].ToString();
+                hasta.Tc = Convert.ToDouble(dr["HastaTC"].ToString());
+                hasta.Ad = dr["HastaAd"].ToString();
+                hasta.Soyad = dr["HastaSoyad"].ToString();
+                hasta.HastalikAd = dr["HastalikAd"].ToString();
+                hasta.DiyetisyenAd = dr["DiyetisyenAd"].ToString();
+                hasta.DiyetisyenSoyad = dr["DiyetisyenSoyad"].ToString();
+                hasta.DiyetAd = dr["DiyetAd"].ToString();
+                hasta.DiyetListe[0] = dr["Sabah"].ToString();
+                hasta.DiyetListe[1] = dr["Ogle"].ToString();
+                hasta.DiyetListe[2] = dr["Aksam"].ToString();
             }
+            return hasta;
         }
 
     }
