@@ -15,7 +15,7 @@ namespace DiyetUygulamasi
 
         public override void DiyetBilgiCikti()
         {
-            hastaBilgi.DiyetTur = "";
+            hastaBilgi.DiyetAd = "";
         }
 
         public override void KisiselBilgiCikti()

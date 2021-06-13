@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,7 +16,10 @@ namespace DiyetUygulamasi
 
         public override void DiyetBilgiCikti()
         {
-            hastaBilgi.DiyetTur = "";
+            if (!File.Exists("rapor.html"))
+            {
+                File.Create("rapor.html");
+            }
         }
 
         public override void KisiselBilgiCikti()
