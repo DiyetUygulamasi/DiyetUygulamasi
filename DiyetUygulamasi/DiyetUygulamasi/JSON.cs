@@ -14,16 +14,15 @@ namespace DiyetUygulamasi
         {
             hastaBilgi = new HastaBilgi().HastaBilgiAl(TC);
         }
-
         public override void DiyetBilgiCikti(StreamWriter kullanilmiyor, JsonWriter writer)
         {
-            writer.WritePropertyName("Diyet Bilgileri");//Diyet Bilgileri tutan Json Object
+            writer.WritePropertyName("Diyet Bilgileri");         //Diyet Bilgileri tutan Json Object
             writer.WriteStartObject();
             {
                 writer.WritePropertyName("Diyet Adı:");
                 writer.WriteValue(hastaBilgi.DiyetAd);
 
-                writer.WritePropertyName("Diyet Takvimi:");//Diyet Takvim Bilgileri tutan Json Object
+                writer.WritePropertyName("Diyet Takvimi:");     //Diyet Takvim Bilgileri tutan Json Object
                 writer.WriteStartObject();
                 {
                     writer.WritePropertyName("Sabah:");
@@ -38,10 +37,9 @@ namespace DiyetUygulamasi
                 writer.WriteEndObject();
             }
         }
-
         public override void KisiselBilgiCikti(StreamWriter kullanilmiyor, JsonWriter writer)
         {
-            writer.WritePropertyName("Hasta Bilgileri:");//Hasta Bilgileri tutan Json Object
+            writer.WritePropertyName("Hasta Bilgileri:");         //Hasta Bilgileri tutan Json Object
             writer.WriteStartObject();
             {
                 writer.WritePropertyName("Hasta TC:");
@@ -67,7 +65,7 @@ namespace DiyetUygulamasi
             {
                 writer.Formatting = Formatting.Indented;
 
-                writer.WriteStartObject();//Bütün Bilgileri tutan Json Object
+                writer.WriteStartObject();                  //Bütün Bilgileri tutan Json Object
                 {
                     KisiselBilgiCikti(kullanilmiyor, writer);
                     DiyetBilgiCikti(kullanilmiyor, writer);
@@ -93,7 +91,7 @@ namespace DiyetUygulamasi
             {
                 writer.Formatting = Formatting.Indented;
 
-                writer.WriteStartObject();//Bütün Bilgileri tutan Json Object
+                writer.WriteStartObject();               //Bütün Bilgileri tutan Json Object
                 {
                     DiyetBilgiCikti(kullanilmiyor, writer);
                     KisiselBilgiCikti(kullanilmiyor, writer);

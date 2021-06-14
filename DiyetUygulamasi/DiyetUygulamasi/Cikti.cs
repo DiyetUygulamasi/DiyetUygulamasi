@@ -17,10 +17,10 @@ namespace DiyetUygulamasi
             get { return HastaBilgi; }
         }
 
-        public abstract void KisiselBilgiCikti(StreamWriter html,JsonWriter json);
-        public abstract void DiyetBilgiCikti(StreamWriter html, JsonWriter json);
-        public abstract void BilgiCikti();
-        public abstract void BilgiCiktiTers();
+        public abstract void KisiselBilgiCikti(StreamWriter html,JsonWriter json);  //Hasta bilgilerinin rapora yazdırıldığı metot.
+        public abstract void DiyetBilgiCikti(StreamWriter html, JsonWriter json);   //Hastanın diyet bilgilerinin rapora yazdırıldığı metot.
+        public abstract void BilgiCikti();          //Sırasıyla kişi bilgileri ve diyet bilgilerinin rapora yazdırıldığı metot. 
+        public abstract void BilgiCiktiTers();      //Sırasıyla diyet bilgileri ve kişi bilgilerinin rapora yazdırıldığı metot.
 
     }
 }

@@ -10,16 +10,15 @@ namespace DiyetUygulamasi
     {
         public string Ad { get; set; }
         public string Soyad { get; set; }
-        public double Tc { get; set; }
+        public double Tc { get; set; }            //Hasta bilgileri property şeklinde tanımlanır.
         public int HastalikID { get; set; }
         public double DiyetisyenTc { get; set; }
 
-        protected IDiyet diyet;
-        public Hasta(IDiyet diyet)
+        protected IDiyet diyet;                   
+        public Hasta(IDiyet diyet)                //Arayüz ile abstract class arasında köprü kurulur.
         {
             this.diyet = diyet;
         }
-
-        public abstract void hastaOlustur(Hasta hasta);
+        public abstract void hastaOlustur(Hasta hasta);     //Hasta classından alınan parametre ile hastaOluştur fonksiyonu tanımlanır.
     }
 }

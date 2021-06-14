@@ -12,18 +12,18 @@ namespace DiyetUygulamasi
         SqlCon connection = new SqlCon();
         public string Ad { get; set; }
         public string Soyad { get; set; }
-        public double Tc { get; set; }
-        public string HastalikAd { get; set; }
+        public double Tc { get; set; }          
+        public string HastalikAd { get; set; }          //Hastanın bilgileri property ile atanır.
         public string DiyetisyenAd { get; set; }
         public string DiyetisyenSoyad { get; set; }
         public string DiyetAd { get; set; }
 
         public string[] DiyetListe = new string[3];
 
-        public HastaBilgi HastaBilgiAl(double hastaTC)
+        public HastaBilgi HastaBilgiAl(double hastaTC)          
         {
             HastaBilgi hasta = new HastaBilgi();
-            SqlCommand komut = new SqlCommand
+            SqlCommand komut = new SqlCommand           //HastaBilgiAl procedurenden çekilen veriler yukarıdaki propertylere atanır.
             {
                 Connection = connection.SqlConnect(),
                 CommandText = "execute HastaBilgiAl "+ hastaTC

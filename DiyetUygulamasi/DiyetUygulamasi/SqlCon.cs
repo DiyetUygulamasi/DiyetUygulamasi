@@ -11,7 +11,7 @@ namespace DiyetUygulamasi
     {
         public SqlConnection SqlConnect()
         { 
-            SqlConnection connection = new SqlConnection("Data Source=DESKTOP-3PS3P83\\BERKCANSERVER;Initial Catalog=DiyetDatabase;Integrated Security=True");//Bağlantı açma
+            SqlConnection connection = new SqlConnection("Data Source=.;Initial Catalog=DiyetDatabase;Integrated Security=True");//Bağlantı açma
             connection.Open();
             return connection;
         }

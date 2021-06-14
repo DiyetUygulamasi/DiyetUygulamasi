@@ -14,12 +14,12 @@ namespace DiyetUygulamasi
         private int diyetID = 1;
         private string diyetAdi = "Akdeniz";
         private string diyetListesi = "Akdeniz Diyet Listesi:";
-        public int DiyetID { get { return diyetID; } set { diyetID = value; } }
+        public int DiyetID { get { return diyetID; } set { diyetID = value; } }         
         public string DiyetAdi { get { return diyetAdi; } set { diyetAdi = value; } }
         public string DiyetListesi { get { return diyetListesi; } set { diyetListesi = value; } }
         public void DiyetAta(double HastaTc)
         {
-            SqlCommand diyetAta = new SqlCommand
+            SqlCommand diyetAta = new SqlCommand                //tblHasta tableındaki hastanın diyeti atanır.
             {
                 Connection = connection.SqlConnect(),
                 CommandText = "update tblHasta set DiyetID = " + diyetID + " where HastaTC = " + HastaTc
